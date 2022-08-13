@@ -1,0 +1,6 @@
+file = open('shields.txt','a')
+print("Введите название репозитория: ")
+repo = input()
+print("Введите название аккаунта:")
+name = input()
+print("[![GitHub issues](https://img.shields.io/github/issues/",name,"/",repo,"?style=plastic)](https://github.com/",name,"/",repo,"/issues) [![GitHub stars](https://img.shields.io/github/stars/",name,"/",repo,")](https://github.com/",name,"/",repo,"/stargazers) [![GitHub forks](https://img.shields.io/github/forks/",name,"/",repo,")](https://github.com/",name,"/",repo,"/network)", sep="", file=file)
